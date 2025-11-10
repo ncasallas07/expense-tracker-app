@@ -1,6 +1,6 @@
 # ExpenseTrackerApp
 
-App Android en **Kotlin** para registrar ingresos/gastos, ver saldo y estadísticas (almacenamiento en memoria).
+App Android en **Kotlin** para mantener un control al registrar ingresos/gastos, ver saldo y estadísticas (almacenamiento en memoria) con el fin de llevar unas finanzas estables al saber en que se van los gastos.
 
 ## Funcionalidades
 - Alta de movimientos (fecha automática, categoría, monto, tipo).
