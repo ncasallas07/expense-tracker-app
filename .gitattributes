@@ -1,0 +1,5 @@
+* text=auto
+
+# Scripts con saltos de línea LF (Linux)
+*.sh text eol=lf
+gradlew text eol=lf
