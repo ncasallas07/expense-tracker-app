@@ -1,0 +1,2 @@
+// Raíz del proyecto - Gradle moderno: sin buildscript ni allprojects.
+// Toda la resolución de repos y versiones está en settings.gradle.

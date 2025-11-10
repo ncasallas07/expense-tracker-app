@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.nelson.expensetracker.app-mergeDebugResources-3:/layout/activity_stats.xml",
+        "source": "com.nelson.expensetracker.app-main-6:/layout/activity_stats.xml"
+    },
+    {
+        "merged": "com.nelson.expensetracker.app-mergeDebugResources-3:/layout/activity_add_expense.xml",
+        "source": "com.nelson.expensetracker.app-main-6:/layout/activity_add_expense.xml"
+    },
+    {
+        "merged": "com.nelson.expensetracker.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.nelson.expensetracker.app-main-6:/layout/activity_main.xml"
+    }
+]

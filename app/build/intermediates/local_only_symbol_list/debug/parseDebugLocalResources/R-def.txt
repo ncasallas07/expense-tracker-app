@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color purple_500
+color teal_200
+id btnAdd
+id btnClearFilters
+id btnSave
+id btnStats
+id chart
+id etAmount
+id etCategory
+id listView
+id rbExpense
+id rbIncome
+id rgType
+id spinnerCategory
+id spinnerMonth
+id tvBalance
+id tvEmpty
+layout activity_add_expense
+layout activity_main
+layout activity_stats
+string app_name
+style Theme.ExpenseTracker
