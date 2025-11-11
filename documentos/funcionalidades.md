@@ -4,6 +4,7 @@
 Aplicación móvil (Android, Kotlin) para registrar ingresos y gastos, consultar saldo en tiempo real y visualizar estadísticas por mes y categoría, con una interfaz simple y ligera.
 
 2) Alcance de la versión 1 (MVP)
+   
 2.1 Módulos y funciones obligatorias
 
 Movimientos (CRUD mínimo)
@@ -101,6 +102,7 @@ Fecha: por defecto hoy (selector manual en V2).
 Confirmaciones: al eliminar movimiento, diálogo “¿Eliminar este movimiento?”.
 
 5) Modelo de datos (MVP)
+   
 data class Expense(
     val id: Int,
     val date: String,     // "yyyy-MM-dd"
