@@ -1,7 +1,12 @@
+# Gradle/Android build outputs
+/app/build/
+/build/
+/.gradle/
 
-/.gradle
-/local.properties
-/.idea
-/build
-/captures
-.externalNativeBuild
+# IDE
+/.idea/
+/*.iml
+
+# OS
+.DS_Store
+Thumbs.db
