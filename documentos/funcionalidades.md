@@ -103,26 +103,19 @@ Confirmaciones: al eliminar movimiento, diálogo “¿Eliminar este movimiento?�
 
 5) Modelo de datos (MVP)
    
-data class Expense(
-    val id: Int,
-    val date: String,     // "yyyy-MM-dd"
-    val category: String, // "Alimentación", "Transporte", etc.
-    val amount: Double,
-    val type: String      // "Ingreso" o "Gasto"
-)
+<img width="499" height="166" alt="image" src="https://github.com/user-attachments/assets/d26fdeb2-f6ba-4781-9414-afd4ede535fd" />
 
+**Repositorio temporal**
 
-Repositorio temporal
+**addExpense(date, category, amount, type)**
 
-addExpense(date, category, amount, type)
+**getAll(): List<Expense>**
 
-getAll(): List<Expense>
+**getBalance(): Double**
 
-getBalance(): Double
+**deleteById(id: Int)**
 
-deleteById(id: Int)
-
-filter(month: Int?, category: String?): List<Expense>
+**filter(month: Int?, category: String?): List<Expense>**
 
 6) Catálogo de categorías (sugerido)
 
@@ -133,6 +126,7 @@ Gastos: Alimentación, Transporte, Servicios, Entretenimiento, Educación, Salud
 En V2 se agregará gestión de categorías (crear/editar/eliminar, iconos).
 
 7) UX / Flujo de pantallas
+   
 7.1 Home
 
 Top: “Saldo actual: $X”.
@@ -235,10 +229,3 @@ Gastos: #F44336 (rojo).
 
 Fondo/acentos compatibles con Material 3.
 
-15) Enlaces internos del repo
-
-documentos/ideas.md — backlog y mejoras.
-
-documentos/ui.md — capturas y flujos de pantallas.
-
-documentos/imagenes/ — imágenes vinculadas en los .md.
