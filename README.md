@@ -2,7 +2,6 @@
 
 App Android en **Kotlin** para mantener un control al registrar ingresos/gastos, ver saldo y estadísticas (almacenamiento en memoria) con el fin de llevar unas finanzas estables al saber en que se van los gastos.
 
-
 # Autores
 Nelson Casallas - Alejandra Mesa
 
