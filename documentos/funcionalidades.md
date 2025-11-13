@@ -9,11 +9,9 @@ Aplicación móvil (Android, Kotlin) para registrar ingresos y gastos, consultar
 
 Movimientos (CRUD mínimo)
 
-Crear Ingreso o Gasto con: fecha (auto por defecto), categoría, monto y nota opcional.
+Crear Ingreso o Gasto con: fecha (auto por defecto), categoría y monto.
 
 Listado cronológico de movimientos.
-
-Eliminar un movimiento (confirmación).
 
 Saldo actual
 
@@ -29,13 +27,9 @@ Botón Limpiar filtros.
 
 Estadísticas
 
-Barras por mes: Ingresos vs Gastos (dos colores).
-
-Torta por categoría (opcional) del mes filtrado.
+Torta por categoría del mes filtrado.
 
 Persistencia temporal
-
-En memoria (repositorio singleton) para MVP.
 
 UI
 
@@ -46,8 +40,6 @@ Pantalla agregar movimiento.
 Pantalla estadísticas.
 
 2.2 Fuera de alcance en V1 (Backlog inmediato)
-
-Persistencia con Room.
 
 Exportar CSV / compartir reporte.
 
@@ -61,11 +53,11 @@ Respaldo local / nube.
 
 Registrar movimiento
 
-Como usuario, quiero registrar un ingreso o gasto con categoría y monto, para llevar el control diario.
+° Como usuario, quiero registrar un ingreso o gasto con categoría y monto, para llevar el control diario.
 
 Criterios de aceptación
 
-Si el monto no es válido (> 0), debo ver un mensaje de error.
+Si el monto no es válido (> 0), no lo deja digitar.
 
 La fecha se sugiere con hoy, pero puede editarse (en V2).
 
@@ -73,33 +65,33 @@ Al guardar, vuelvo al Home y veo el nuevo movimiento arriba.
 
 Ver saldo
 
-Como usuario, quiero ver mi saldo actual en la parte superior, para saber cómo voy.
+° Como usuario, quiero ver mi saldo actual en la parte superior, para saber cómo voy.
 
-Criterios: el saldo cambia al crear/eliminar movimientos.
+Criterios: el saldo cambia al crear movimientos.
 
 Filtrar por mes/categoría
 
-Como usuario, quiero filtrar la lista por mes y categoría, para enfocarme en un periodo y tipo de gasto.
+° Como usuario, quiero filtrar la lista por mes y categoría, para enfocarme en un periodo y tipo de gasto.
 
 Criterios: filtros combinables; botón “Limpiar” devuelve a vista general.
 
 Ver estadísticas
 
-Como usuario, quiero gráficos con colores distintos para ingresos y gastos, para comparar visualmente.
+° Como usuario, quiero gráficos con colores distintos para ingresos y gastos, para comparar visualmente.
 
-Criterios: barras con 12 meses; color A = ingresos, color B = gastos; leyenda visible; valores con formato moneda.
+Criterios: Torta por tipo de movimiento con dos colores para evidenciar a que corresponde, barras con 12 meses; color A = ingresos, color B = gastos (V2); leyenda visible; valores con formato moneda.
 
 4) Reglas y validaciones
 
 Monto: obligatorio, numérico y > 0.
 
-Tipo: Ingreso o Gasto (radio buttons).
+Tipo: Ingreso o Gasto.
 
-Categoría: obligatorio (lista predefinida, editable en V2).
+Categoría: obligatorio.
 
 Fecha: por defecto hoy (selector manual en V2).
 
-Confirmaciones: al eliminar movimiento, diálogo “¿Eliminar este movimiento?”.
+Confirmaciones: al eliminar movimiento, diálogo “¿Eliminar este movimiento?” (V2).
 
 5) Modelo de datos (MVP)
    
@@ -149,11 +141,11 @@ Validaciones en Guardar.
 
 7.3 Estadísticas
 
-Barras (12 meses):
+Torta (12 meses):
 
 Ingresos vs Gastos con dos colores distintos.
 
-(Opcional) Torta del mes filtrado por categoría.
+(Opcional) del mes filtrado por categoría.
 
 8) No funcionales (V1)
 
@@ -226,6 +218,3 @@ Regla: PR a main requiere build verde.
 Ingresos: #4CAF50 (verde).
 
 Gastos: #F44336 (rojo).
-
-Fondo/acentos compatibles con Material 3.
-
